@@ -1,1 +1,93 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+        Azienda Pinco Pallino 
+        <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRITTnOCFIuiXUwFsVKlvvJLR4zIO93rtn37w&s" width="70"><br> 
+        Questionario di gradimento
+      </h1>
+      <p id="description">
+        Grazie per il tempo dedicatoci!
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label  id="name-label" 
+        for="name">Nickname:</label>
+        <input required 
+        type="text" id="name" 
+        name="name" placeholder="Pippo">
+        <br><br>
+        <label id="email-label" 
+        for="email">Email:</label>
+        <input required 
+        type="email" id="email" 
+        name="email" placeholder="user@gmail.com">
+        <br><br>
+        <label id="number-label"
+        for="age">Età(opzionale):</label>
+        <input required 
+        type="number" id="number" name="number" min="1" max="3" placeholder="18">
+        <br>
+        <p>
+          Quale opzione rispecchia meglio la tua attuale  
+          situazione lavorativa?
+        </p>
+        <select id="dropdown" name="dropdown">
+          <option value="value1">
+            Studente</option>
+          <option value="value2">
+            Lavoratore</option>
+          <option value="value3">
+            Disoccupato</option>
+          <option value="value4">
+            Preferisco non rispondere</option>
+        </select>
+        <p>
+          Come valuteresti la tua esperienza 
+          da Japan Direct?
+        </p>
+          <input type="radio" id="option1" 
+                 name="valore" value="option1">
+          <label for="option1">Ottima</label>
+          <input type="radio" id="option2" 
+                 name="valore" value="option2">
+          <label for="option2">Buona</label>
+          <input type="radio" id="option3" 
+                 name="valore" value="option3">
+          <label for="option3">Discreta</label>
+          <input type="radio" id="option4" 
+                 name="valore" value="option4">
+          <label for="option4">Scarsa</label>
+          <p>
+          Quali aspetti del locale ritieni sufficientemente
+          adeguati alla tua esperienza?
+        </p>
+         <input type="checkbox" id="option1" 
+                 name="valore" value="option1">
+          <label for="option1">Competenze</label>
+          <input type="checkbox" id="option2" 
+                 name="valore" value="option2">
+          <label for="option2">Pulizia</label>
+          <input type="checkbox" id="option3" 
+                 name="valore" value="option3">
+          <label for="option3">Prezzi</label>
+          <input type="checkbox" id="option4" 
+                 name="valore" value="option4">
+          <label for="option4">Personale</label>
+          <p>
+            Spiega la tua esperienza e suggerisci 
+            cosa potremo migliorare!
+          </p>
+          <textarea id="name" maxlenght="1000"></textarea><br>
+          <button id="submit" type="submit">Invia</button>
+      </form>
+    </main>
+  </body>
+</html>
